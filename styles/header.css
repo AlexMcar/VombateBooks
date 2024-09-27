@@ -1,0 +1,196 @@
+.cabecalho__menu-hamburguer{
+    width: 24px;
+    height: 24px;
+    background-image: url("../assets/header/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+.container__botao:checked~.container__rotulo>.cabecalho__menu-hamburguer{
+    background-image: url("../assets/header/menu_branco_24dp\ 1.svg");
+}
+.container__botao:checked~.container__rotulo{
+    background: var(--gradiente);
+}
+.container__botao{
+    display: none;
+}
+
+.cabecalho{
+    z-index: 10;
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    
+
+}
+.cabecalho__container{
+    display: flex;
+    align-items: center;
+    
+}
+.cabecalho__container__icons{
+    display: flex;
+    align-items: center;
+    
+}
+.cabecalho__container{
+    display: flex;
+    align-items: center;
+    
+}
+
+.cabecalho__container__img{
+    padding: 1em;
+}
+.logo-do-site{
+    width: 50px;
+}
+
+.lista-menu{
+    background-color: var(--branco);
+    padding: 15px;
+    display: none;
+    position: absolute;
+    top: 110%;
+    margin-left: 5px;
+    border-radius: 0 16px 16px 16px;
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.25);
+    
+
+}
+.container__botao:checked~.lista-menu{
+    display: block;
+}
+.lista-menu__item, .lista-menu__titulo{
+    padding: 1em;
+    text-transform: uppercase;
+    margin-left: 10px;
+    margin-right: 100px;
+    
+}
+.lista-menu__titulo{
+    
+    color: var(--laranja);
+    font-weight: 700;
+
+}
+.lista-menu__item{
+    background: var(--azul-degrede);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.lista-menu__link{
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    
+}
+.Titulo_site{
+    display: none;
+}
+.opcoes{
+    display: none;
+}
+.fav{
+    padding: 16px;
+}
+.cabecalho__container__link{
+    display: none;
+}
+
+
+
+@media screen and (min-width: 1024px){
+    .Titulo_site_negrito, .Titulo_site{
+        display:inline-block;
+        font-family:'Josefin Sans';
+        font-weight: 700;
+        font-size: 24px;
+    }
+    .logo-do-site{
+        width: 60px;
+    }
+    .Titulo_site{
+        font-weight: 400;
+    }
+    .opcoes{
+        display: block;
+    }
+    .opcoes_lista{
+        display: flex;
+    }
+    .opcoes_item{
+        padding: 15px;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-family: var(--font-principal);
+        
+    }
+    .opcoes_link{
+        text-decoration: none;
+        color: black;
+    }
+    .fav{
+        display: none;
+    }
+    .cabecalho__menu-hamburguer{
+        display: none;
+    }
+    .opcoes__botao:checked ~ .lista-menu{
+        display: block;
+    }
+    .opcoes__botao{
+        display: none;
+    }
+    .cabecalho__container__img{
+        margin: 0 20px 0 20px;
+    }
+    .cabecalho__container__link{
+        display: none;
+    }
+    .opcoes__botao:checked~.opcoes__rotulo>.opcoes_item{
+        background: var(--gradiente);
+        color: aliceblue;
+    }
+    .lista-menu__item:hover{
+        background: var(--gradiente);
+    }
+    .lista-menu__item:hover>.lista-menu__link{
+        -webkit-text-fill-color: var(--branco);
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .cabecalho{
+        background-color: var(--branco);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        padding: 0 2em;
+    
+    }
+    .cabecalho__container__icons{
+        margin-right: 5px;
+    }
+    .cabecalho__container__link{
+        display: block;
+        font-weight: 600;
+        color: rgb(59, 58, 58);
+        text-decoration: none;
+    }
+    .cabecalho__container__img{
+        margin: 0 ;
+    }
+    .opcoes{
+        margin-right: auto;
+        padding-left: 2em;
+    }
+    
+}

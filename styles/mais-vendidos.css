@@ -1,0 +1,73 @@
+.mais_vendidos{
+    background: var(--azul-degrede);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+.mais_vendidos__titulo{
+    color: var(--branco);
+    font-size: 16px;
+    font-weight: 300;
+    margin: 1em;
+
+}
+.mais_vendidos__topicos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+
+}
+.mais_vendidos__topicos__lista{
+    margin: 1.5em 0.5em;
+    font-size: 14px;
+    font-weight: 700;
+}
+.mais_vendidos__topicos__itens{
+    color: var(--branco);
+    border-radius: 12px;
+    text-decoration: none;
+    background-color: var(--laranja);
+    padding: 1em;
+
+}
+
+@media screen and (min-width: 1024px){
+    .mais_vendidos__titulo{
+        font-size: 26px;
+        margin-bottom: 45px;
+    }
+    .mais_vendidos__topicos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 60%;
+        height: 200px;
+    }
+    .mais_vendidos__topicos__itens{
+        color: var(--branco);
+        border-radius: 12px;
+        font-size: 18px;
+        text-decoration: none;
+        background-color: var(--laranja);
+        padding: 15px;
+    
+    }
+    .mais_vendidos__topicos__lista{
+        margin: 1em 0.5em;
+        font-size: 14px;
+        font-weight: 700;
+    }
+}
+@media screen and (min-width: 1728px ){
+    .mais_vendidos__topicos{
+        width: 40%;
+    }
+    .mais_vendidos__topicos__itens{
+        border-radius: 12px;
+        font-size: 24px;
+        padding: 15px;
+    
+    }
+}

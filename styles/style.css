@@ -1,0 +1,54 @@
+@import url("../styles/header.css");
+@import url("../styles/banner.css");
+@import url("../styles/carrossel.css");
+@import url("../styles/mais-vendidos.css");
+@import url("../styles/contato.css");
+@import url("../styles/rodape.css");
+
+:root{
+    --cor-de-fundo: #EBECEE ; 
+    --branco: #FFFFFF;
+    --laranja: #D27777;
+    --azul-degrede: linear-gradient(94deg, #645858 38.13%, #998c8c 134.98%);
+    --font-principal: "Poppins";
+    --gradiente: linear-gradient(94deg, #645858 38.13%, #998c8c 134.98%);
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    font-family: var(--font-principal);
+    font-size: 16px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 35%;
+    height: 35%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    z-index: 1000;
+}
+.pop_up_img{
+    width: 100%;
+}
+
+/* Mostrar o pop-up e o fundo escuro quando ativado */
+#popup:target, #popup-overlay:target {
+    display: flex;
+    height: fit-content;
+}
+
+/* Estilo do botão de fechar */
+.close-btn {
+    position: absolute;
+    background-color: #d32927;
+    border: solid 2px #93938C;
+    border-radius: 12px 0 0 0 ;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #fcfcfc;
+    text-decoration: none;
+}
